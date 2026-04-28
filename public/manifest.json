@@ -1,0 +1,20 @@
+{
+  "name": "Wedding Invitation",
+  "short_name": "WeddingInv",
+  "description": "Aplikasi Undangan Pernikahan Digital",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5085B1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-placeholder.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["lifestyle", "social"],
+  "lang": "id",
+  "dir": "ltr"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "wedding-invitation-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:full": "wrangler pages dev dist --port 8788 -- npm run dev",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "deploy": "npm run build && wrangler pages deploy dist",
+    "deploy:preview": "npm run build && wrangler pages deploy dist --preview"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "^5.2.8",
+    "@radix-ui/react-scroll-area": "^1.2.10",
+    "@radix-ui/react-tabs": "^1.1.13",
+    "@tailwindcss/postcss": "^4.2.4",
+    "@types/bcryptjs": "^2.4.6",
+    "autoprefixer": "^10.5.0",
+    "bcryptjs": "^2.4.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.10",
+    "lottie-react": "^2.4.1",
+    "lucide-react": "^1.11.0",
+    "nanoid": "^5.1.9",
+    "postcss": "^8.5.10",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-dropzone": "^14.2.3",
+    "react-router-dom": "^7.14.1",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "^3.4.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^8.58.0",
+    "@typescript-eslint/parser": "^8.58.0",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.4",
+    "wrangler": "^3.0.0"
+  }
+}

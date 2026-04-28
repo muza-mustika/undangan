@@ -1,0 +1,27 @@
+name = "wedding-invitation"
+compatibility_date = "2024-06-20"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "dist"
+
+[env.production]
+NODE_VERSION = "18"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "wedding-invitation-db"
+database_id = "b7425af7-529d-4a8c-b025-4583a09d0181"
+
+[env.preview]
+NODE_VERSION = "18"
+
+[[env.preview.d1_databases]]
+binding = "DB"
+database_name = "wedding-invitation-db"
+database_id = "b7425af7-529d-4a8c-b025-4583a09d0181"
+
+# Directory configuration
+[env.production.vars]
+ENVIRONMENT = "production"
+
+[env.preview.vars]
+ENVIRONMENT = "preview"
